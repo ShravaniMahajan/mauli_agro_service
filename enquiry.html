@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://www.example.com/your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            height: 100vh;
+        }
+        .form-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 100px auto;
+        }
+        .form-control, .btn {
+            margin-bottom: 10px;
+        }
+        .btn-submit {
+            width: 100%;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 class="text-center text-white">Enquiry Form</h2>
+        <form action="submit_enquiry.php" method="POST">
+            <!-- Name -->
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            
+            <!-- Email -->
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            
+            <!-- Phone Number -->
+            <input type="text" name="phone" class="form-control" placeholder="Your Phone" required>
+            
+            <!-- Bill Number -->
+            <input type="text" name="billNo" class="form-control" placeholder="Bill No" required>
+            
+            <!-- Enquiry Type -->
+            <select name="enquiryType" class="form-control" required>
+                <option value="">Select Enquiry Type</option>
+                <option value="Product Query">Product Query</option>
+                <option value="Service Query">Service Query</option>
+                <option value="General Query">General Query</option>
+                <option value="Complaint">Complaint</option>
+            </select>
+            
+            <!-- Query -->
+            <textarea name="query" class="form-control" rows="4" placeholder="Your Query" required></textarea>
+            
+            <!-- Button Group (Submit & Reset) -->
+            <div class="btn-group">
+                <button type="submit" class="btn btn-success btn-sm">Submit</button>
+                <button type="reset" class="btn btn-danger btn-sm">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS & Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

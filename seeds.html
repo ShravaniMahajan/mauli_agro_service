@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Service Center - Seasonal Seeds</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Hide all cards initially */
+        .season { display: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-success sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="Agro Service Logo" style="width:60px;" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="brand.html">BRAND</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">OUR SERVICES</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="fertilizer.html">Fertilizer</a></li>
+                            <li><a class="dropdown-item" href="pesticides.html">Pesticides</a></li>
+                            <li><a class="dropdown-item" href="Herbicide.html">Herbicide</a></li>
+                            <li><a class="dropdown-item" href="seeds.html">Seeds</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="container mt-5">
+        <center><h2>Seasonal Seeds</h2></center>
+        <br>
+
+        <!-- Buttons to filter seasons -->
+        <div class="text-center mb-4">
+            <button type="button" class="btn btn-success" id="summerBtn">Summer Seeds</button>
+            <button type="button" class="btn btn-warning" id="monsoonBtn">Monsoon Seeds</button>
+            <button type="button" class="btn btn-info" id="winterBtn">Winter Seeds</button>
+        </div>
+
+        <!-- Seeds container -->
+        <div class="row" id="seedsContainer">
+            <!-- Summer Seeds -->
+            <div class="col-3 season summer">
+                <div class="card">
+                    <img src="watermealonseeds.jpg" alt="Watermelon Seeds" class="card-img-top" style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Watermelon seeds</h5>
+                        <p class="card-text"> 99% Purity, White Color, 9 Months Shelf Life</p>
+                        <center><b>M.R.P:</b> 100 INR/Kilograms</center>
+                        <center>
+                            <!-- Correct Button: Using <a> to link to Google Form directly -->
+                            <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 season summer">
+                <div class="card">
+                    <img src="sweeetcornseeds.jpg" alt="Sweet Corn Seeds" class="card-img-top" style="height: 125px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sweet Corn</h5>
+                        <p class="card-text">
+                            High yield, sweet golden kernels, ready in 80-90 days.</p>
+                        <center><b>M.R.P:</b> 800 rs 100/200 grams</center>
+                        <center>
+                            <!-- Correct Button: Using <a> to link to Google Form directly -->
+                            <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 season summer">
+                <div class="card">
+                    <img src="Cucumber Bush Crop Seeds (Wetsel).jpg" alt="Cucumber Seeds" class="card-img-top" style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Cucumber Seeds</h5>
+                        <p class="card-text">Ideal for summer,fresh cucumbers for consumption.</p>
+                        <center><b>M.R.P:</b> 120 rs</center>
+                        <center>
+                            <!-- Correct Button: Using <a> to link to Google Form directly -->
+                            <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 season summer">
+                <div class="card">
+                    <img src="Tomato-Shivam.jpg" alt="Tomato Seeds" class="card-img-top" style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tomato Seeds</h5>
+                        <p class="card-text">Saaho Tomato Seeds yield 25-40 MT/acre with firms</p>
+                        <center><b>M.R.P:</b> 978 rs</center>
+                        <center>
+                            <!-- Correct Button: Using <a> to link to Google Form directly -->
+                            <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monsoon Seeds -->
+            <div class="col-3 season monsoon">
+                <div class="card">
+                    <img src="mamba.png" alt="Rice Seeds" class="card-img-top" style="height: 135px;">
+                    <div class="card-body">
+                        <h6  class="card-title">RICE</h6>
+                        <p class="card-text">Mamba Pan 848: 155-160 days, 140-145 cm height, short bold grains, 81.5% AC.
+
+                        </p>
+                        <center><b>M.R.P:</b> 850 rs</center>
+                        <center>
+                            <!-- Correct Button: Using <a> to link to Google Form directly -->
+                            <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 season monsoon">
+                <div class="card">
+                    <img src="kush.jpg" alt="Maize Seeds" class="card-img-top" style="height: 130px;">
+                    <div class="card-body">
+                        <h5 class="card-title">BEANS AND PULSE </h5>
+                        <p class="card-text">Kush Gold Mixed Pulses (1kg) for sprouting: Green Gram, Moth Beans, Cowpea, Red Lentils.
+</p>
+                        <center><b>M.R.P:</b> 189 rs</center>
+                        <center>
+                            <!-- Correct Button: Using <a> to link to Google Form directly -->
+                            <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 season monsoon">
+                <div class="card">
+                    <img src="soyabean.jpg" alt="Soybean Seeds" class="card-img-top" style="height: 153px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Soybean</h5>
+                        <p class="card-text"> Soybeans (100g), suitable for vegetarians, in seed form, 0.22 lbs packaging.</p>
+                        <center><b>M.R.P:</b> 319 rs</center>
+                        <center>
+                            <!-- Correct Button: Using <a> to link to Google Form directly -->
+                            <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 season monsoon">
+                <div class="card">
+                    <img src="sugarcane.jpg" alt="Sugarcane Seeds" class="card-img-top" style="height: 130px;">
+                    <div class="card-body">
+                        <h5 class="card-title">SUGARCANE</h5>
+                        <p class="card-text">HUMOL -G  special boosts growth and soil health with potassium and humic acid.</p>
+                        <center><b>M.R.P:</b> 645 rs</center>
+                        <center>
+                            <!-- Correct Button: Using <a> to link to Google Form directly -->
+                            <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Winter Seeds -->
+
+                        <!-- Winter Seeds -->
+                        <div class="col-3 season winter">
+                            <div class="card">
+                                <img src="spinch.webp" alt="Spinach Seeds" class="card-img-top" style="height: 130px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spinach</h5>
+                                    <p class="card-text">Perfect for cold weather, spinach grows well in winter for fresh leafy greens.</p>
+                                    <center><b>M.R.P:</b> 100 rs</center>
+                                    <center>
+                                        <!-- Correct Button: Using <a> to link to Google Form directly -->
+                                        <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-3 season winter">
+                            <div class="card">
+                                <img src="cauliflower.jpg" alt="Cauliflower Seeds" class="card-img-top" style="height: 105px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cauliflower</h5>
+                                    <p class="card-text">Cauliflower grows best in cool, winter temperatures, offering healthy yields of fresh produce.</p>
+                                    <center><b>M.R.P:</b> 180 rs</center>
+                                    <center>
+                                        <!-- Correct Button: Using <a> to link to Google Form directly -->
+                                        <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-3 season winter">
+                            <div class="card">
+                                <img src="carrot_seeds.jpg" alt="Carrot Seeds" class="card-img-top" style="height: 130px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carrot</h5>
+                                    <p class="card-text">Carrots thrive in winter, producing crisp and sweet roots for various culinary uses.</p>
+                                    <center><b>M.R.P:</b> 130 rs</center>
+                                    <center>
+                                        <!-- Correct Button: Using <a> to link to Google Form directly -->
+                                        <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-3 season winter">
+                            <div class="card">
+                                <img src="b.jpg" alt="Broccoli Seeds" class="card-img-top" style="height: 130px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Broccoli</h5>
+                                    <p class="card-text">Broccoli is an excellent winter crop, providing nutrient-rich florets for healthy meals.</p>
+                                    <center><b>M.R.P:</b> 160 rs</center>
+                                    <center>
+                                        <!-- Correct Button: Using <a> to link to Google Form directly -->
+                                        <a href="https://forms.gle/epM5YkKgBQkEDWLAA" class="btn btn-primary btn-md" target="_blank">BUY NOW</a>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            
+                <!-- JavaScript to filter seasons -->
+                <script>
+                    $(document).ready(function() {
+                        // Show Summer Seeds
+                        $("#summerBtn").click(function() {
+                            $(".season").hide();  // Hide all cards
+                            $(".summer").show();  // Show only summer cards
+                        });
+            
+                        // Show Monsoon Seeds
+                        $("#monsoonBtn").click(function() {
+                            $(".season").hide();  // Hide all cards
+                            $(".monsoon").show();  // Show only monsoon cards
+                        });
+            
+                        // Show Winter Seeds
+                        $("#winterBtn").click(function() {
+                            $(".season").hide();  // Hide all cards
+                            $(".winter").show();  // Show only winter cards
+                        });
+                    });
+                </script>
+            
+            </body>
+            </html>
+            
